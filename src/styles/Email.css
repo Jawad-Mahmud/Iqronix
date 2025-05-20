@@ -1,0 +1,37 @@
+.email-container{
+    text-align: center;
+    color: black;
+    height: 50vh;
+    background-color: aquamarine;
+    width: 70vw;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.input-email{
+    margin-top: 100px;
+    width: 80%;
+    height: 80px;
+    border-radius: 30px;
+    border-width: 0px;
+    padding-left: 10px;
+    font-size: medium;
+    border: none;
+    outline: none;
+}
+.subscribe-button{
+    margin-top: 10px;
+    background-color:rgb(67, 44, 142);
+    width: 80%;
+    height:60px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: white;
+
+}
