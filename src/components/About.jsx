@@ -5,14 +5,28 @@ import { FadeIn } from './fadeIn';
 import { useState } from 'react';
 import { Email } from './Email';
 import { Footer } from './Footer';
+import memPic1 from "../assets/memPic1.avif"
+import memPic2 from "../assets/memPic2.avif"
+import memPic3 from "../assets/memPic3.avif"
+import memPic4 from "../assets/memPic4.avif"
+const images = [
+  { image: memPic1, name: "Alice", role: "Founder & CEO" },
+  { image: memPic2, name: "Bob", role: "Tech Head" },
+  { image: memPic3, name: "Charlie", role: "Product Lead" },
+  { image: memPic4, name: "Diana", role: "Success Head" }
+];
+
 const tabs = {
   Mission:
     "To innovate purposefully, creating transformative technology and solutions that uplift communities and promote sustainability. Our focus is on delivering meaningful impact, ensuring every project drives positive, long-term change.",
   Vision:
     "To lead by example, shaping a world where technology supports human well-being and environmental stewardship. We strive to build a future defined by shared prosperity and sustainable growth.",
   Values:
-    "We value integrity, collaboration, innovation, and a commitment to continuous learning. These principles guide our decision-making and actions."
+  "We value integrity, collaboration, and innovation. Our culture is built on continuous learning and accountability, ensuring that our work reflects purpose, responsibility, and lasting impact."
+
 };
+
+
 
 const fadeUp={
    hidden: { opacity: 0, y: 200 },
@@ -62,6 +76,13 @@ export const About = () => {
     
 
     </div>
+
+  
+
+    <div className='cont2-cont3'>
+
+
+
     
     <div className='container-2'>
        <FadeIn as="div" className="what">What we do</FadeIn>
@@ -116,11 +137,35 @@ export const About = () => {
    </FadeIn>
    
    </div>
+
+   </div>
+   <div className='container-4'>
+
+      {
+        images.map((images,index)=>(
+       <FadeIn as='div' key={index}>
+         <img 
+         key={index}
+        src={images.image}
+        alt={`Image ${index+1}`}
+        className='member-image'
+         />
+      <div className="member-info">
+        <p className="member-name">{images.name}</p>
+        <p className='member-role'>{images.role}</p>
+      </div>
+
+       </FadeIn>
+        )
+      )
+      } 
+  
+   </div>
     
 
    
     
-    </>
+  </>
 
   
     
