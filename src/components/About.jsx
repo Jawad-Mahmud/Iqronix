@@ -5,10 +5,12 @@ import { FadeIn } from './fadeIn';
 import { useState } from 'react';
 import { Email } from './Email';
 import { Footer } from './Footer';
+import { Fragment } from 'react';
 import memPic1 from "../assets/memPic1.avif"
 import memPic2 from "../assets/memPic2.avif"
 import memPic3 from "../assets/memPic3.avif"
 import memPic4 from "../assets/memPic4.avif"
+
 const images = [
   { image: memPic1, name: "Alice", role: "Founder & CEO" },
   { image: memPic2, name: "Bob", role: "Tech Head" },
@@ -64,7 +66,7 @@ export const About = () => {
       variants={fadeUp}
       initial="hidden"
       animate={headingViewing?"show":"hidden"}
-      
+      className='about-header'
       >
         Get to know us
         </motion.h1>

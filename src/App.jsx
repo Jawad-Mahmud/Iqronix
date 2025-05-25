@@ -14,7 +14,8 @@ export const App = () => {
       <About/>
       
       <FadeIn>
-
+        <Email/>
+        <Footer/>
       </FadeIn>
     </>
   )

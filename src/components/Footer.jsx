@@ -16,13 +16,14 @@ export const Footer = () => {
         Iqronix
         </div>  
         <div className='footer-s-navbar-links'>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact Us</Link>
+        <Link className='link' to="/">Home</Link>
+        <Link className='link' to="/about">About</Link>
+        <Link className='link' to="/contact">Contact Us</Link>
+        <Link className='link' to="/services">Services</Link>
         </div>
         <div className='footer-s-footer'>
-         <p>@ 2025 Iqronix Inc.Copyright and rights reserved <br /></p>   
-         <p className='Privacy-Policy'>Privacy Policy</p>
+         <p className='copyright'>@ 2025 Iqronix Inc.Copyright and rights reserved <br /></p>   
+         <p className='privacy-policy'>Privacy Policy</p>
         </div>
     </div>
     </FadeIn>
