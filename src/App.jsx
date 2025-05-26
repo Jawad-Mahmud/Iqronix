@@ -1,21 +1,34 @@
 import React from "react"
+
 import { About } from "./components/About"
 import { Navbar } from "./components/Navbar"
 import { Email } from "./components/Email"
 import { Footer } from "./components/Footer"
 import { FadeIn } from "./components/fadeIn"
 import { Contact } from "./components/Contact"
+import { Route,Routes, useLocation } from "react-router-dom"
+import { Home } from "./components/Home"
 export const App = () => {
+  const location=useLocation();
+  const hideFooter=location.pathname==="/contact";
   return (
     <>
       
     
       <Navbar/>
-      <About/>
+      
+        <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        
+      </Routes>
       
       <FadeIn>
-        <Email/>
-        <Footer/>
+        
+          {!hideFooter && <Email />}
+          {!hideFooter && <Footer/>}
       </FadeIn>
     </>
   )
