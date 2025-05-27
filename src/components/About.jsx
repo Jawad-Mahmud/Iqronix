@@ -1,7 +1,7 @@
 import React, {use, useRef} from 'react'
 import { motion,useInView,AnimatePresence } from 'motion/react';
 import '../styles/About.css'
-import { FadeIn } from './fadeIn';
+import { FadeIn } from './FadeIn';
 import { useState } from 'react';
 import { Email } from './Email';
 import { Footer } from './Footer';

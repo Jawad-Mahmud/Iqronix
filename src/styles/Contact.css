@@ -2,3 +2,89 @@
   padding: 0;
   margin: 0;
 }
+.contact-container{
+  background-image: url('/IqronixAboutBg.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-top: 0;
+  height: 70vh;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+.contact-header{
+  font-size: 3rem;
+  
+}
+.container-1{
+    margin:0px;
+    min-height: 100vh;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.contact-heading{
+    margin-top: 70px;
+    background-color: white;
+    height: 30px;
+    width:100px;
+    text-align: center;
+    border-radius: 50px;
+    color: rgb(113, 93, 227);
+     display: flex;               
+    align-items: center;        
+    justify-content: center;    
+
+}
+.para1{
+    text-align: center;
+    font-size: 1rem;
+}
+.contact-container-2{
+  background-color: rgb(237, 236, 244);
+  padding-left: 3rem;
+ min-height: 100vh;
+  padding-top: 3rem;
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+
+}
+
+.input-item{
+  padding-top: 3rem;
+  
+}
+input{
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 500px;
+  margin-top: 1rem;
+  border-radius: 20px;
+}
+label{
+  margin-bottom: 1rem;
+}
+button{
+  margin-top:1.5rem ;
+  border: none;
+  outline: none;
+  margin-bottom: 2rem;
+  height: 50px;
+  width: 200px;
+  border-radius: 20px;
+  background-color: rgb(113, 93, 227);
+  color: white;
+}
+.message-input{
+  height: 100px;
+}

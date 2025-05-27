@@ -43,8 +43,13 @@
 }
 .para1{
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
+
+
+/*container-1 finish here*/
+
+
 .team-info{
    margin-top: 1rem;
   display: flex;
