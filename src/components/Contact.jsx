@@ -34,10 +34,10 @@ message:'',
 
    return(
     <>
-       <div className='container-1'>
+       <div className='contact-container-1'>
        
        
-          <div className='contact-container'>
+          <div className='contact-sub-container'>
               <motion.div
             layout
             ref={headingRef}
@@ -46,7 +46,7 @@ message:'',
             transition={{duration:.6,ease:"easeOut"}}
             className="about-heading"
             
-            >ABOUT US</motion.div>
+            >Contact Us</motion.div>
           
               <FadeIn as="h1" className="contact-header">Get In Touch</FadeIn>
               

@@ -3,7 +3,7 @@ import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
 import "../styles/Footer.css"
 import MemoryIcon from '@mui/icons-material/Memory'; 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { FadeIn } from './fadeIn';
+import { FadeIn } from './FadeIn';
 export const Footer = () => {
   return (
     <>

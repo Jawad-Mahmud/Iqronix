@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
 }
-.contact-container{
+.contact-sub-container{
   background-image: url('/IqronixAboutBg.avif');
   background-size: cover;
   background-position: center;
@@ -21,7 +21,7 @@
   font-size: 3rem;
   
 }
-.container-1{
+.contact-container-1{
     margin:0px;
     min-height: 100vh;
 }

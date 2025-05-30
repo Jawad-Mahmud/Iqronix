@@ -60,7 +60,7 @@ export const About = () => {
       transition={{duration:.6,ease:"easeOut"}}
       className="about-heading"
       
-      >ABOUT US</motion.div>
+      >About Us</motion.div>
       <motion.h1
       ref={headingRef}
       variants={fadeUp}

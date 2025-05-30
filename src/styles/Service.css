@@ -1,0 +1,254 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.service-sub-container{
+  background-image: url('/IqronixAboutBg.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-top: 0;
+  height: 70vh;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+
+
+}
+.service-header{
+  font-size: 3rem;
+  
+}
+.service-container-1{
+    margin:0px;
+    min-height: 100vh;
+    
+}
+.service-container-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  height: 90vh;
+  width: 100%;
+  
+
+}
+
+.service-pic-1 {
+  
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: grid;
+  place-items: center; /* centers the image */
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills space, may crop */
+}
+
+.service-container-2-child-1 {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.service-container-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  height: 90vh;
+  width: 100%;
+  
+
+}
+
+
+
+
+
+.service-container-3 {
+  display: flex;
+  flex-direction: row; /* default: horizontal layout */
+  height: 90vh;
+  width: 100%;
+}
+
+/* .service-pic-2 = IMAGE SIDE */
+.service-pic-2 {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  display: grid;
+  place-items: center; /* centers the image */
+}
+
+/* .service-container-3-child-1 = TEXT SIDE */
+.service-container-3-child-1 {
+  padding: 1rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+
+
+
+
+.service-container-4{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  height: 90vh;
+  width: 100%;
+  
+
+}
+
+.service-pic-3 {
+  
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: grid;
+  place-items: center; /* centers the image */
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills space, may crop */
+}
+
+.service-container-4-child-1 {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.service-container-4{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  height: 90vh;
+  width: 100%;
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .service-container-2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    height: 100vh;
+  }
+
+  .service-pic-1 {
+    height:auto ; /* ✅ Shrink image height */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .service-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  
+  }
+
+  .service-container-2-child-1{
+    height: auto;
+  }
+
+
+
+
+
+
+   .service-container-3 {
+    flex-direction: column;
+    height: auto;
+  
+  }
+
+  .service-pic-2 {
+    order: 1;
+    width: 100%;
+  }
+
+  .service-container-3-child-1 {
+    order: 2;
+    width: 100%;
+  }
+
+  .service-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  
+  }
+
+
+
+
+
+
+
+  .service-container-4 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    height: 100vh;
+    margin-top: 6rem;
+  }
+
+  .service-pic-3 {
+    height:auto ; /* ✅ Shrink image height */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .service-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  
+  }
+
+  .service-container-4-child-1 {
+    height: auto;
+  }
+
+}
