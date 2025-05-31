@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import '../styles/navbar.css';
 import MemoryIcon from '@mui/icons-material/Memory'; 
+import { Link } from 'react-router-dom';
 
 export  function Navbar() {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
@@ -23,16 +24,17 @@ export  function Navbar() {
         <div className="navbar-content">
           <span className="navbar-logo">
                <MemoryIcon style={{ fontSize: '2.5rem', marginRight: '0.5rem', verticalAlign: 'middle' }} />
-            Iqronix</span>
+            FrontLab</span>
 
           {isDesktop ? (
             <>
               <div className="navbar-menu">
-                <a href="/" className="navbar-link">Home</a>
-                <a href="/about" className="navbar-link">About</a>
-                <a href="/contact" className="navbar-link">Contact</a>
+             <Link to="/" className="navbar-link">Home</Link>
+             <Link to="/about" className="navbar-link">About</Link>
+             <Link to="/contact" className="navbar-link">Contact</Link>
+             <Link to="/services" className="navbar-link">Service</Link>
               </div>
-              <button className="navbar-cta">Get Started</button>
+            
             </>
           ) : (
             <>
@@ -42,11 +44,14 @@ export  function Navbar() {
 
               {isMobileMenuOpen && (
                 <div className="navbar-menu mobile">
-                  <a href="/" className="navbar-link" onClick={() => setIsMobileMenuOpen(false)}>Home</a>
-                  <a href="/about" className="navbar-link" onClick={() => setIsMobileMenuOpen(false)}>About</a>
-                  <a href="/contact" className="navbar-link" onClick={() => setIsMobileMenuOpen(false)}>Contact</a>
-                  <button className="navbar-cta" onClick={() => setIsMobileMenuOpen(false)}>Get Started</button>
-                </div>
+                 <Link to="/" className="navbar-link" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+<Link to="/about" className="navbar-link" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
+<Link to="/services" className="navbar-link" onClick={() => setIsMobileMenuOpen(false)}>Services</Link>
+<Link to="/contact" className='navbar-link' onClick={() => setIsMobileMenuOpen(false)}>
+  <button className="navbar-cta">Contact Us</button>
+</Link>  
+
+</div>
               )}
             </>
           )}

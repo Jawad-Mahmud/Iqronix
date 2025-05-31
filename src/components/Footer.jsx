@@ -13,7 +13,7 @@ export const Footer = () => {
     <div className='footer-container'>
       <div className='logo'>
            <MemoryIcon style={{ fontSize: '2.5rem', marginRight: '0.5rem', verticalAlign: 'middle' }} />
-        Iqronix
+        FrontLab
         </div>  
         <div className='footer-s-navbar-links'>
         <Link className='link' to="/">Home</Link>
@@ -22,7 +22,7 @@ export const Footer = () => {
         <Link className='link' to="/services">Services</Link>
         </div>
         <div className='footer-s-footer'>
-         <p className='copyright'>@ 2025 Iqronix Inc.Copyright and rights reserved <br /></p>   
+         <p className='copyright'>@ 2025 FrontLab Inc.Copyright and rights reserved <br /></p>   
          <p className='privacy-policy'>Privacy Policy</p>
         </div>
     </div>
