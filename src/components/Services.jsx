@@ -23,7 +23,7 @@ export const Services = () => {
                initial={{opacity:0,y:100}}
                animate={headingViewing?{opacity:1,y:0}:{}}
                transition={{duration:.6,ease:"easeOut"}}
-               className="about-heading"
+               className="service-heading"
                
                >What we do</motion.div>
              
@@ -94,6 +94,7 @@ Discover how our tech solutions can transform your business. Explore our feature
             </Fade>
               
              </div>
+             
       
 
 
