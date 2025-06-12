@@ -44,7 +44,7 @@
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .footer-s-navbar-links {
         flex-direction: column;
         gap: 2rem; /* smaller gap for mobile */
